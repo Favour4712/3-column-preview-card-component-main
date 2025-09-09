@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+
+.SEDAN {
+  background-color: hsl(31, 77%, 52%);
+  width: 300px;
+  height: 450px;
+  padding: 40px 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.SUVS {
+  background-color: hsl(184, 100%, 22%);
+  width: 300px;
+  height: 450px;
+  padding: 40px 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.LUXURY {
+  background-color: hsl(179, 100%, 13%);
+  width: 300px;
+  height: 450px;
+  padding: 40px 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+h2 {
+  font-family: "Big Shoulders Display";
+  padding: 25px 0px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  padding-bottom: 70px;
+}
+
+.A {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+  border: 2px solid white;
+  border-radius: 20px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.B {
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+  border: 2px solid white;
+  border-radius: 20px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.C {
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+  border: 2px solid white;
+  border-radius: 20px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.A:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+.B:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+.C:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 450px) {
+  body {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  main {
+    display: block;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .SEDAN {
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+  }
+
+  .SUVS {
+    height: auto;
+    width: 100%;
+  }
+
+  .LUXURY {
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    width: 100%;
+  }
+}
